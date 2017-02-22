@@ -16,7 +16,15 @@ ActiveRecord::Schema.define(version: 20170221191556) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-   create_table "tutors", force: :cascade do |t|
+  create_table "contactos", force: :cascade do |t|
+    t.string   "nombre"
+    t.string   "email"
+    t.string   "mensaje"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "tutors", force: :cascade do |t|
     t.string   "nombre"
     t.string   "apellido"
     t.string   "rut"
@@ -28,13 +36,4 @@ ActiveRecord::Schema.define(version: 20170221191556) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "contactos", force: :cascade do |t|
-    t.string   "nombre"
-    t.string   "email"
-    t.string   "mensaje"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
- 
 end
