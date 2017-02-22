@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   get 'welcome/index'
-  get 'tutors/index'
 
   resources :contactos
   resources :tutors
