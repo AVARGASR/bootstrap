@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   get 'welcome/index'
 
+  match '/index', to: 'tutors#index', via: 'get'
+
   resources :contactos
   resources :tutors
   # The priority is based upon order of creation: first created -> highest priority.
