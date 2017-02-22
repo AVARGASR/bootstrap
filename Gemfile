@@ -8,6 +8,8 @@ gem 'mail_form',  '~> 1.5.1'
 
 gem 'rails_12factor', '~> 0.0.2'
 
+gem 'cowsay'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
