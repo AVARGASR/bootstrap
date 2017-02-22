@@ -28,7 +28,7 @@ class TutorsController < ApplicationController
 
     respond_to do |format|
       if @tutor.save
-        format.html { redirect_to welcome_index_url, notice: 'Tutor was successfully created.' }
+        format.html { redirect_to @tutor, notice: 'Tutor was successfully created.' }
         format.json { render :show, status: :created, location: @tutor }
       else
         format.html { render :new }
