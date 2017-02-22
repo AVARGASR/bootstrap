@@ -17,8 +17,8 @@
           <h1><span class="glyphicon glyphicon-book" aria-hidden="true"></span></h1>
           <h2>Quienes somos</h2>
           <p>Te enseñamos de una manera diferente, intuitiva y eficaz. El mundo actual requiere de personas capaces de trasmitir conocimiento, y nosotros estamos a la vanguardia, para que tengas la mejor experiencia estudiando con nosotros.</p>
-          <p><a class="btn btn-success" href="info" role="button">Más información</a></p>
-          <a><%= link_to "¡MAS INFO", info_index_path%></a>
+          <p><a class="btn btn-success", <%= link_to "¡MAS INFO", info_index_path%> </a></p>
+
         </div>
 
 
@@ -26,7 +26,8 @@
           <h1><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></h1>
           <h2>¿Necesitas ayuda?</h2>
           <p>Envíanos un mensaje para que podamos resolver tus inquietudes, recuerda que estamos disponibles todos los días del año. Nuestros ayudantes se encargarán de proporcionarte la ayuda que necesitas</p>
-          <p><a class="btn btn-success" href="contacto" role="button">Contactanos</a></p>
+          <p><a class="btn btn-success", <%= link_to "contacto", new_contacto_path(@contacto)%> </a></p>
+          
         </div>
     </div>
      
