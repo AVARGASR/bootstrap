@@ -1,24 +1,25 @@
 <!DOCTYPE html>
+<head>
 
     <br>
-    <div class="jumbotron center">   
+    <div  class="jumbotron center">   
         <h1 style="color:#f39c12;">Videotutores</h1>
         <h3 style="color:#f39c12;">¿Quieres ser parte de este novedoso proyecto?</h3> 
           <br>
           <div class="row center">
-          
-              <a><%= link_to "¡Quiero Unirme!", new_tutor_path(@tutor)%></a>
-              <p><a style="color:#FFFFFF;" class="btn btn-primary btn-lg" href="tutors" >¡QUIERO UNIRME!</a></p>
+           <p><a style="color:#FFFFFF;" class="btn btn-primary btn-lg" href="tutors" >¡QUIERO UNIRME!</a></p>             
+              
           </div>       
 
     </div>
     
-    <div class= "row center ">
+    <div class="container" style="color:#2c3e50;" >
+    <div  class= "row center ">
         <div class="col-md-6">
           <h1><span class="glyphicon glyphicon-book" aria-hidden="true"></span></h1>
           <h2>Quienes somos</h2>
           <p>Te enseñamos de una manera diferente, intuitiva y eficaz. El mundo actual requiere de personas capaces de trasmitir conocimiento, y nosotros estamos a la vanguardia, para que tengas la mejor experiencia estudiando con nosotros.</p>
-          <p><a class="btn btn-success", <%= link_to "¡MAS INFO", info_index_path%> </a></p>
+          <p><a style="color:#FFFFFF;" class="btn btn-success", <%= link_to "Más información", info_index_path%> </a></p>
 
         </div>
 
@@ -27,12 +28,16 @@
           <h1><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></h1>
           <h2>¿Necesitas ayuda?</h2>
           <p>Envíanos un mensaje para que podamos resolver tus inquietudes, recuerda que estamos disponibles todos los días del año. Nuestros ayudantes se encargarán de proporcionarte la ayuda que necesitas</p>
-          <p><a class="btn btn-success", <%= link_to "contacto", new_contacto_path(@contacto)%> </a></p>
+           <p><a style="color:#FFFFFF;" class="btn btn-success", <%= link_to "Contactanos", new_contacto_path(@contacto)%> </a></p>
           
         </div>
     </div>
+    </div>
      
       
+      <br>
+      <br>
+      <br>
       <br>
       <br>
       <br>

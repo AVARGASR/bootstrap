@@ -1,14 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 $body-bg: #ecf0f1;
-$navbar-inverse-bg: #ecf0f1;
-$navbar-inverse-link-color: white;
+$font-family: 'Lato', sans-serif;
+
 $brand-primary: #27ae60;
-$jumbotron-bg: rgba(52, 73, 94,1.0);
+$jumbotron-bg: #2c3e50;
 @import 'bootstrap-sprockets';  
 @import 'bootstrap';
 
 .center{
+	  font-family: 'Lato', sans-serif;
 	text-align:center;
 }
+
+.jumbotron1 {
+  background-color: orange;
+  text-align:center;
+}
+
 
 
 
