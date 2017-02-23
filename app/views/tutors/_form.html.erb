@@ -11,33 +11,106 @@
     </div>
   <% end %>
 
-<form id="form">
-  <div class="field">
-    <%= f.label :nombre %><br>
-    <%= f.text_field :nombre %>
+
+<form>
+
+<div class="container-fluid " style="background-color: #2980b9";>
+  <div class="center row">
+      <div class="col-xs-6 col-sm-6">
+        <div class="form-group">     
+          <div class="field">
+              <label for="name">Nombre</label><br>
+              <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+              <%=f.text_field :nombre,:maxlength => 25%>       
+          </div>
+        </div>      
+      </div>
+
+    <div class="col-xs-6 col-sm-6">
+        <div class="form-group">
+          <div class="field">
+              <label for="name">Apellido</label><br>
+              <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+              <%=f.text_field :apellido,:maxlength => 25%>       
+          </div>
+        </div>
+      
+    </div>
+
+          
+
+
   </div>
-  <div class="field">
-    <%= f.label :apellido %><br>
-    <%= f.text_field :apellido %>
+
+  <div class="center row">
+      <div class="col-xs-6 col-sm-6">
+        <div class="form-group">
+          <div class="field">
+              <label for="name">Rut</label><br>
+              <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+              <%=f.text_field :rut,:maxlength => 10%>       
+          </div>
+        </div>
+      
+      </div>
+
+    <div class="col-xs-6 col-sm-6">
+        <div class="form-group">
+          <div class="field">
+              <label for="name">Celular</label><br>
+              <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+              <%=f.text_field :celu,:maxlength => 9%>       
+          </div>
+        </div>
+      
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :rut %><br>
-    <%= f.text_field :rut %>
+
+  <div class="center row">
+    <div class="col-xs-6 col-sm-6">
+        <div class="form-group">
+          <div class="field">
+              <%= f.label :email %><br>
+              <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+              <%= f.text_field :email %>
+          </div>
+        </div>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :celu %><br>
-    <%= f.number_field :celu %>
+
+  <div class="center row">
+      <div class="col-xs-6 col-sm-6">
+        <div class="form-group">
+          <div class="field">
+              <%= f.label :carrera %><br>
+              <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+              <%= f.select(:carrera, options_for_select([['Ingeniería Civil Electrónica/Mecánica','Ingeniería Civil Electrónica/Mecánica'],['Ingeniería Informática/Civil en Computación ', 'Ingeniería Informática/Civil en Computación'], ['Ingeniería Industrial/Civil Industrial', 'Ingeniería Industrial/Civil Industrial'],['Ingeniería Química/Química Industrial/Biotecnología','Ingeniería Química/Química Industrial/Biotecnología'], ['Ingeniería en Geomensura/Transporte y Tránsito','Ingeniería en Geomensura/Transporte y Tránsito'],['Otro','Otro']]), {  prompt: 'Seleccione Carrera' }) %>
+          </div>
+        </div>
+      
+      </div>
   </div>
-  <div class="field">
-    <%= f.label :carrera %><br>
-    <%= f.text_field :carrera %>
+
+  <div class="center row">
+    <div class="col-xs-6 col-sm-6">
+        <div class="form-group">
+          <div class="field">
+              <%= f.label :asignatura %><br>
+              <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+              <%= f.select(:asignatura, options_for_select([['Algebra I', 'Algebra I'], ['Calculo I', 'Calculo I'],['Química General', 'Química General'], ['Física Clásica', 'Física Clásica'], ['Otro', 'Otro']]), {  prompt: 'Seleccione Asignatura a realizar' }) %>
+          </div>
+        </div>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :asignatura %><br>
-    <%= f.text_field :asignatura %>
-  </div>
+
+</div>
+
+
+  
+  
   <div class="actions">
     <%= f.submit %>
   </div>
-  </form>
+</div>
+</form>
 <% end %>
