@@ -116,7 +116,8 @@ header {
 input {
   font-family: 'Lato', sans-serif;
   font-size: 0.875em;
-  width: 360px;
+  width: 320px;
+  max-width: 400px;
   height: 50px;
   padding: 0px 15px 0px 15px;
   
@@ -139,7 +140,7 @@ input:hover {
 }
 
 textarea {
-  width: 360px;
+  width: 320px;
   max-width: 400px;
   height: 110px;
   max-height: 110px;
