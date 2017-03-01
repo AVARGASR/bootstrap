@@ -15,18 +15,34 @@
 
 
 <form id="form" class="topBefore">
-    
-      <input id="nombre" type="text" placeholder="NOMBRE">
-      <input id="email" type="text" placeholder="E-MAIL">
-      <textarea id="mensaje" type="text" placeholder="MENSAJE"></textarea>
 
-  <div class="center row">
+
+    <%=f.text_field :nombre, placeholder: "NOMBRE"%>
+    <%=f.text_field :email, placeholder: "E-MAIL"%>
+    <%=f.text_area :mensaje, placeholder: "MENSAJE"%>
+      
+
+  <div class="row">
+            
+
            <div class = "col-xs-12 col-sm-6 col-md-8">
-                <%=f.submit "Enviar " ,class:"btn center-align"%>
+                <%=f.submit "¡ENVIAR EL MENSAJE! " ,class:"btn center-align"%>
            </div>
+           
   </div>
+
   
 </form>
+<br>
+<br>
+<div  class="jumbotron center">   
+        
+          <div class="row center">
+          <p><a style="color:#FFFFFF;" class="btn btn-primary btn-sm", <%= link_to "Volver", welcome_index_path%> </a></p>             
+              
+          </div>       
+
+    </div>
 
 
 
