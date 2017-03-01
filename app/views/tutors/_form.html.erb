@@ -1,16 +1,7 @@
+<div class= "container">
+
 <%= form_for(@tutor) do |f| %>
-  <% if @tutor.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@tutor.errors.count, "error") %> prohibited this tutor from being saved:</h2>
-
-      <ul>
-      <% @tutor.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
+  
 
 <form>
 
@@ -21,7 +12,7 @@
           <div class="field">
               <label for="name">Nombre</label><br>
               <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-              <%=f.text_field :nombre,:maxlength => 25%>       
+              <%=f.text_field :nombre,:maxlength => 25, placeholder: "NOMBRE"%>       
           </div>
         </div>      
       </div>
@@ -31,7 +22,7 @@
           <div class="field">
               <label for="name">Apellido</label><br>
               <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-              <%=f.text_field :apellido,:maxlength => 25%>       
+              <%=f.text_field :apellido,:maxlength => 25,placeholder: "APELLIDO"%>       
           </div>
         </div>
       
@@ -48,7 +39,7 @@
           <div class="field">
               <label for="name">Rut</label><br>
               <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
-              <%=f.text_field :rut,:maxlength => 10%>       
+              <%=f.text_field :rut,:maxlength => 10, placeholder: "FORMATO: 12345678-9"%>       
           </div>
         </div>
       
@@ -59,7 +50,7 @@
           <div class="field">
               <label for="name">Celular</label><br>
               <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
-              <%=f.text_field :celu,:maxlength => 9%>       
+              <%=f.text_field :celu,:maxlength => 9,placeholder: "CELULAR 9 DIGITOS"%>       
           </div>
         </div>
       
@@ -72,7 +63,7 @@
           <div class="field">
               <%= f.label :email %><br>
               <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-              <%= f.text_field :email %>
+              <%= f.text_field :email ,placeholder: "CORREO ELECTRONICO"%>
           </div>
         </div>
     </div>
@@ -103,7 +94,8 @@
     </div>
   </div>
 
-
+<br>
+<br>
 
 
   <div class="center row">
@@ -122,10 +114,10 @@
 <div  class="jumbotron ">   
         
           <div class="row center ">
-          <p><a style="color:#FFFFFF;" class="btn btn-primary btn-sm"href="http://localhost:3000/" >Volver</a></p>             
+          <p><a style="color:#FFFFFF;" class="btn btn-primary btn-sm"href="https://videotutores.herokuapp.com/" >Volver</a></p>             
           </div>       
 
 </div>
 </div>
 <% end %>
-
+</div>
