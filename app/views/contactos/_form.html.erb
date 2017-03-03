@@ -1,43 +1,21 @@
 <%= form_for(@contacto) do |f| %>
-
-
-  <% if @contacto.errors.any? %>
-    <div id="error_explanation">
-      <h2>Error al guardar:</h2>
-
-      <ul>
-      <% @contacto.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+<body>
 
 
   
 
+  
 
-<div class=" center row">
+
+<div class="col-md-4 col-md-offset-4">
 
             
 
            <div class = "col-xs-6 col-sm-12"><%=f.text_field :nombre, placeholder: "NOMBRE"%></div>
-              
- </div>            
-   <div class="center row">
-  <div class = "col-xs-6 col-md-12"><%=f.text_field :email, placeholder: "E-MAIL"%></div>
-  </div>             
-                
-  <div class="center row">
-  <div class = "col-xs-6 col-md-12"><%=f.text_area :mensaje, placeholder: "MENSAJE"%></div>
-  </div>
-
- 
-
-    
-    
-    
-      
+           <div class = "col-xs-6 col-md-12"><%=f.text_field :email, placeholder: "E-MAIL"%></div>
+           <div class = "col-xs-6 col-md-12"><%=f.text_area :mensaje, placeholder: "MENSAJE"%></div>
+           <br>
+           <br>
 
   <div class="center row">
             
@@ -65,5 +43,10 @@
 
 
   <% end %>
+
+</body>
+
+
+
   
 
